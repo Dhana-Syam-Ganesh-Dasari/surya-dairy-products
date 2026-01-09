@@ -19,36 +19,43 @@ const HeroSection = () => {
             </span>
             <h1 className="section-heading mb-6 leading-tight">
               Fresh & Pure Dairy Products{" "}
-              <span className="text-gradient-primary">Straight from Our Farm</span>
+              <span className="text-gradient-primary">
+                Straight from Our Farm
+              </span>
             </h1>
             <p className="text-lg text-muted-foreground mb-8 max-w-xl mx-auto lg:mx-0">
-              {businessInfo.tagline}. Experience the authentic taste of farm-fresh dairy, 
-              delivered to your doorstep with care.
+              {businessInfo.tagline}. Experience the authentic taste of
+              farm-fresh dairy, delivered to your doorstep with care.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <Link to="/shop" className="btn-primary inline-flex items-center justify-center gap-2">
+              <Link
+                to="/shop"
+                className="btn-primary inline-flex items-center justify-center gap-2"
+              >
                 Shop Now
                 <ArrowRight className="w-4 h-4" />
               </Link>
-              <Link to="/about" className="btn-outline-primary inline-flex items-center justify-center">
+              <Link
+                to="/about"
+                className="btn-outline-primary inline-flex items-center justify-center"
+              >
                 Learn About Us
               </Link>
             </div>
           </div>
 
           {/* Right - Featured Product */}
-          <div className="relative animate-fade-in" style={{ animationDelay: "0.2s" }}>
+          <div
+            className="relative animate-fade-in"
+            style={{ animationDelay: "0.2s" }}
+          >
             <div className="relative max-w-md mx-auto lg:ml-auto">
               {/* Decorative circles */}
               <div className="absolute -top-8 -left-8 w-32 h-32 bg-primary/10 rounded-full blur-2xl" />
               <div className="absolute -bottom-8 -right-8 w-40 h-40 bg-leaf/10 rounded-full blur-2xl" />
-              
+
               {/* Product Card */}
               <div className="relative bg-card rounded-3xl shadow-xl overflow-hidden border border-border/50 p-6">
-                <div className="absolute top-4 right-4">
-                  <span className="badge-leaf">⭐ Featured</span>
-                </div>
-                
                 <div className="aspect-square rounded-2xl overflow-hidden bg-cream mb-4">
                   <img
                     src={featuredProduct.image}
@@ -56,14 +63,14 @@ const HeroSection = () => {
                     className="w-full h-full object-cover animate-bounce-subtle"
                   />
                 </div>
-                
+
                 <h3 className="font-display font-semibold text-xl mb-2">
                   {featuredProduct.name}
                 </h3>
                 <p className="text-muted-foreground text-sm mb-4">
                   {featuredProduct.description}
                 </p>
-                
+
                 <div className="flex items-center justify-between">
                   <div>
                     <span className="text-2xl font-bold text-primary">

@@ -167,7 +167,7 @@ const Contact = () => {
               },
               {
                 q: "What areas do you deliver to?",
-                a: "We currently deliver to Bhopal and surrounding areas. Contact us for specific location availability.",
+                a: "We currently deliver to Kaikaluru and surrounding areas. Contact us for specific location availability.",
               },
               {
                 q: "What are your delivery timings?",

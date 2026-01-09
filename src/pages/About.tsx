@@ -55,7 +55,7 @@ const About = () => {
               </h2>
               <div className="space-y-4 text-muted-foreground">
                 <p>
-                  Kumari Dairy Milk started as a humble family farm with just a few cows and 
+                  Kumari Dairy Milk started as a humble family farm with just a few cows and buffalos and 
                   a passion for quality. Today, we're proud to serve thousands of families with 
                   the freshest dairy products.
                 </p>
@@ -65,7 +65,7 @@ const About = () => {
                   instilled in us decades ago.
                 </p>
                 <p>
-                  We believe in sustainable farming practices, happy cows, and bringing the 
+                  We believe in sustainable farming practices, happy animals, and bringing the 
                   authentic taste of farm-fresh dairy to every home.
                 </p>
               </div>

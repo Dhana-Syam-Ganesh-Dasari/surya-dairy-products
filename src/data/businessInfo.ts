@@ -1,19 +1,19 @@
 // Business information - easily editable
 export const businessInfo = {
-  name: "Kumari Dairy Milk",
+  name: "Surya Dairy Products",
   tagline: "Fresh & Pure Dairy Products Straight from Our Farm",
   
   contact: {
-    phone: "+91 98765 43210",
-    whatsapp: "919876543210",
-    email: "info@kumaridairymilk.com",
+    phone: "+91 9014579846",
+    whatsapp: "+919014579846",
+    email: "syamganesh21@gmail.com",
   },
   
   address: {
-    street: "Farm Road, Green Valley",
-    city: "Bhopal",
-    state: "Madhya Pradesh",
-    pincode: "462001",
+    street: "Near Government Hospital",
+    city: "Kaikaluru",
+    state: "Andhra Pradesh,",
+    pincode: "521333",
     country: "India",
   },
   
@@ -54,25 +54,25 @@ export const whyChooseUs = [
 
 export const testimonials = [
   {
-    name: "Priya Sharma",
-    location: "Bhopal",
+    name: "Naga Seshu",
+    location: "Kaikaluru",
     rating: 5,
     text: "Milk is always fresh and delivered on time. My family loves the quality!",
-    avatar: "PS",
+    avatar: "NS",
   },
   {
-    name: "Rajesh Kumar",
-    location: "Indore",
+    name: "D.Ganesh",
+    location: "Gudivada",
     rating: 5,
     text: "Best quality ghee I've used in years. The aroma is just like my grandmother used to make.",
-    avatar: "RK",
+    avatar: "DG",
   },
   {
-    name: "Meena Patel",
-    location: "Bhopal",
+    name: "Sai Ram",
+    location: "Bhimavaram",
     rating: 5,
     text: "Very hygienic and trustworthy dairy. Switched from packaged milk and never looked back!",
-    avatar: "MP",
+    avatar: "SR",
   },
 ];
 
