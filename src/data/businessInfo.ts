@@ -2,30 +2,30 @@
 export const businessInfo = {
   name: "Surya Dairy Products",
   tagline: "Fresh & Pure Dairy Products Straight from Our Farm",
-  
+
   contact: {
     phone: "+91 9014579846",
     whatsapp: "+919014579846",
     email: "syamganesh21@gmail.com",
   },
-  
+
   address: {
-    street: "Near Government Hospital",
+    street: "H637+WM2",
     city: "Kaikaluru",
     state: "Andhra Pradesh,",
     pincode: "521333",
     country: "India",
   },
-  
+
   workingHours: {
     weekdays: "6:00 AM - 8:00 PM",
     weekends: "7:00 AM - 6:00 PM",
     note: "Delivery available daily",
   },
-  
+
   social: {
-    facebook: "https://facebook.com/kumaridairymilk",
-    instagram: "https://instagram.com/kumaridairymilk",
+    facebook: "https://facebook.com/suryadairymilk",
+    instagram: "https://instagram.com/suryadairymilk",
   },
 };
 
@@ -33,7 +33,8 @@ export const whyChooseUs = [
   {
     icon: "Award",
     title: "Premium Quality",
-    description: "Only the finest dairy products from healthy, well-cared-for cows.",
+    description:
+      "Only the finest dairy products from healthy, well-cared-for cows.",
   },
   {
     icon: "Heart",
@@ -48,7 +49,8 @@ export const whyChooseUs = [
   {
     icon: "ShieldCheck",
     title: "No Adulteration",
-    description: "100% pure products with no artificial additives or preservatives.",
+    description:
+      "100% pure products with no artificial additives or preservatives.",
   },
 ];
 
@@ -79,22 +81,26 @@ export const testimonials = [
 export const farmFeatures = [
   {
     title: "Clean & Hygienic Environment",
-    description: "Our farm maintains the highest standards of cleanliness with regular sanitization and veterinary checks.",
+    description:
+      "Our farm maintains the highest standards of cleanliness with regular sanitization and veterinary checks.",
     icon: "Sparkles",
   },
   {
     title: "Modern Grass Cutter",
-    description: "Fresh, nutritious fodder for our cows using advanced grass cutting equipment.",
+    description:
+      "Fresh, nutritious fodder for our cows using advanced grass cutting equipment.",
     icon: "Scissors",
   },
   {
     title: "Automatic Packing Machine",
-    description: "Hygienic packaging with minimal human contact ensuring product freshness.",
+    description:
+      "Hygienic packaging with minimal human contact ensuring product freshness.",
     icon: "Package",
   },
   {
     title: "Advanced Milking System",
-    description: "State-of-the-art milking machines using vacuum pressure and pulsation for efficient & hygienic milk extraction.",
+    description:
+      "State-of-the-art milking machines using vacuum pressure and pulsation for efficient & hygienic milk extraction.",
     icon: "Cog",
   },
 ];

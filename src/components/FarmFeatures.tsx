@@ -1,5 +1,6 @@
 import { Sparkles, Scissors, Package, Cog, LucideIcon } from "lucide-react";
 import { farmFeatures } from "@/data/businessInfo";
+import HeroFarmImage from "@/assets/hero-farm.jpg";
 
 const iconMap: Record<string, LucideIcon> = {
   Sparkles,
@@ -17,8 +18,8 @@ const FarmFeatures = () => {
           <div className="relative animate-fade-in">
             <div className="relative rounded-3xl overflow-hidden shadow-2xl">
               <img
-                src="/images/hero-farm.jpg"
-                alt="Kumari Dairy Farm"
+                src={HeroFarmImage}
+                alt="Surya Dairy Farm"
                 className="w-full h-[400px] md:h-[500px] object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-foreground/60 to-transparent" />

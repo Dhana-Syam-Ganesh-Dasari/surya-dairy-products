@@ -1,3 +1,11 @@
+import MilkImage from "@/assets/milk.jpg";
+import GheeImage from "@/assets/ghee.jpg";
+import ButterImage from "@/assets/butter.jpg";
+import PaneerImage from "@/assets/paneer.jpg";
+import CurdImage from "@/assets/curd.jpg";
+import ButterMilkImage from "@/assets/buttermilk.jpg";
+import CheeseImage from "@/assets/cheese.jpg";
+
 export interface Product {
   id: string;
   name: string;
@@ -17,7 +25,7 @@ export const products: Product[] = [
     price: 100,
     unit: "per liter",
     description: "Farm-fresh milk delivered daily, rich in nutrients and taste.",
-    image: "/images/milk.jpg",
+    image: MilkImage,
     category: "dairy",
     featured: true,
   },
@@ -27,7 +35,7 @@ export const products: Product[] = [
     price: 1800,
     unit: "per kg",
     description: "Traditional slow-cooked ghee made from pure butter.",
-    image: "/images/ghee.jpg",
+    image: GheeImage,
     category: "dairy",
   },
   {
@@ -36,7 +44,7 @@ export const products: Product[] = [
     price: 60,
     unit: "per 100g",
     description: "Creamy homemade butter, perfect for everyday use.",
-    image: "/images/butter.jpg",
+    image: ButterImage,
     category: "dairy",
   },
   {
@@ -45,7 +53,7 @@ export const products: Product[] = [
     price: 450,
     unit: "per kg",
     description: "Fresh cottage cheese, soft and perfect for cooking.",
-    image: "/images/paneer.jpg",
+    image: PaneerImage,
     category: "dairy",
   },
   {
@@ -54,7 +62,7 @@ export const products: Product[] = [
     price: 80,
     unit: "per kg",
     description: "Thick, creamy curd set in traditional clay pots.",
-    image: "/images/curd.jpg",
+    image: CurdImage,
     category: "dairy",
   },
   {
@@ -63,7 +71,7 @@ export const products: Product[] = [
     price: 30,
     unit: "per glass",
     description: "Cool and refreshing buttermilk with traditional spices.",
-    image: "/images/buttermilk.jpg",
+    image: ButterMilkImage,
     category: "beverages",
   },
   {
@@ -72,7 +80,7 @@ export const products: Product[] = [
     price: 600,
     unit: "per kg",
     description: "Aged cheese with rich, complex flavors.",
-    image: "/images/cheese.jpg",
+    image: CheeseImage,
     category: "dairy",
   },
 ];

@@ -3,6 +3,11 @@ import { businessInfo } from "@/data/businessInfo";
 import { getWhatsAppContactUrl } from "@/data/whatsappTemplate";
 
 const Contact = () => {
+  const addressText = `${businessInfo.address.street}, ${businessInfo.address.city}, ${businessInfo.address.state}, ${businessInfo.address.pincode}`;
+  const mapsSearchUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
+    addressText
+  )}`;
+
   return (
     <div className="min-h-screen bg-background">
       {/* Hero */}
@@ -14,8 +19,12 @@ const Contact = () => {
           <h1 className="section-heading mb-4 animate-fade-in-up">
             Contact <span className="text-gradient-primary">Us</span>
           </h1>
-          <p className="section-subheading animate-fade-in-up" style={{ animationDelay: "0.1s" }}>
-            Have questions or want to place an order? We'd love to hear from you!
+          <p
+            className="section-subheading animate-fade-in-up"
+            style={{ animationDelay: "0.1s" }}
+          >
+            Have questions or want to place an order? We'd love to hear from
+            you!
           </p>
         </div>
       </section>
@@ -39,7 +48,10 @@ const Contact = () => {
                   <div>
                     <h3 className="font-semibold mb-1">Phone</h3>
                     <a
-                      href={`tel:${businessInfo.contact.phone.replace(/\s/g, "")}`}
+                      href={`tel:${businessInfo.contact.phone.replace(
+                        /\s/g,
+                        ""
+                      )}`}
                       className="text-muted-foreground hover:text-primary transition-colors"
                     >
                       {businessInfo.contact.phone}
@@ -89,8 +101,10 @@ const Contact = () => {
                   <div>
                     <h3 className="font-semibold mb-1">Location</h3>
                     <p className="text-muted-foreground">
-                      {businessInfo.address.street}<br />
-                      {businessInfo.address.city}, {businessInfo.address.state} {businessInfo.address.pincode}
+                      {businessInfo.address.street}
+                      <br />
+                      {businessInfo.address.city}, {businessInfo.address.state}{" "}
+                      {businessInfo.address.pincode}
                     </p>
                   </div>
                 </div>
@@ -103,26 +117,41 @@ const Contact = () => {
                   <div>
                     <h3 className="font-semibold mb-1">Working Hours</h3>
                     <p className="text-muted-foreground">
-                      Mon - Fri: {businessInfo.workingHours.weekdays}<br />
+                      Mon - Fri: {businessInfo.workingHours.weekdays}
+                      <br />
                       Sat - Sun: {businessInfo.workingHours.weekends}
                     </p>
-                    <p className="text-sm text-primary mt-1">{businessInfo.workingHours.note}</p>
+                    <p className="text-sm text-primary mt-1">
+                      {businessInfo.workingHours.note}
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
 
             {/* Right - Map & CTA */}
-            <div className="animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
+            <div
+              className="animate-fade-in-up"
+              style={{ animationDelay: "0.2s" }}
+            >
               {/* Map placeholder */}
-              <div className="bg-cream rounded-2xl h-64 md:h-80 flex items-center justify-center mb-8 border border-border/50">
-                <div className="text-center p-6">
-                  <MapPin className="w-12 h-12 text-primary mx-auto mb-4" />
-                  <h3 className="font-display font-semibold text-lg mb-2">Visit Our Farm</h3>
-                  <p className="text-muted-foreground text-sm">
-                    {businessInfo.address.street}, {businessInfo.address.city}
-                  </p>
-                </div>
+              <div className="bg-cream rounded-2xl h-64 md:h-80 mb-8 border border-border/50 overflow-hidden relative">
+                <iframe
+                  title="Surya Dairy Farm Location"
+                  className="w-full h-full"
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3824.431627594737!2d81.21156567460973!3d16.55476762625793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a363cda7c100547%3A0x758b79f1a9cce3ee!2sH637%2BWM2%2C%20Kaikalur%2C%20Andhra%20Pradesh%20521333!5e0!3m2!1sen!2sin!4v1768029845940!5m2!1sen!2sin"
+                />
+
+                {/* Clickable overlay to open Google Maps */}
+                <a
+                  href={mapsSearchUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="absolute inset-0"
+                  aria-label="Open location in Google Maps"
+                />
               </div>
 
               {/* WhatsApp CTA */}
@@ -131,8 +160,8 @@ const Contact = () => {
                   Quick Order via WhatsApp
                 </h3>
                 <p className="text-primary-foreground/80 mb-6">
-                  The fastest way to place an order! Just message us on WhatsApp and we'll 
-                  take care of the rest.
+                  The fastest way to place an order! Just message us on WhatsApp
+                  and we'll take care of the rest.
                 </p>
                 <a
                   href={getWhatsAppContactUrl()}
@@ -155,7 +184,8 @@ const Contact = () => {
           <div className="text-center mb-12">
             <span className="badge-leaf mb-4 inline-block">FAQ</span>
             <h2 className="section-heading mb-4">
-              Frequently Asked <span className="text-gradient-primary">Questions</span>
+              Frequently Asked{" "}
+              <span className="text-gradient-primary">Questions</span>
             </h2>
           </div>
 

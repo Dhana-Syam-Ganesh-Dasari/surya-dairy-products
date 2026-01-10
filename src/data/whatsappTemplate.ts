@@ -20,7 +20,7 @@ export const generateWhatsAppMessage = (items: CartItem[], total: number): strin
     .map((item) => `${item.quantity}x ${item.name} – ${formatPrice(item.price * item.quantity)}`)
     .join("\n");
 
-  const message = `Hi! Kumari Garu
+  const message = `Hi Surya Kumari Garu!
 I'd like to place an order from *${whatsappConfig.businessName}*:
 
 Products:
