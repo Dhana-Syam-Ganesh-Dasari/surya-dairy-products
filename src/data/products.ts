@@ -1,10 +1,10 @@
-import MilkImage from "@/assets/milk.jpg";
-import GheeImage from "@/assets/ghee.jpg";
-import ButterImage from "@/assets/butter.jpg";
+import BuffaloMilk from "@/assets/buffalomilk.jpg";
+import CowGhee from "@/assets/cowghee.jpg";
+import CowMilk from "@/assets/cowmilk.jpg";
 import PaneerImage from "@/assets/paneer.jpg";
-import CurdImage from "@/assets/curd.jpg";
-import ButterMilkImage from "@/assets/buttermilk.jpg";
-import CheeseImage from "@/assets/cheese.jpg";
+import BuffaloGhee from "@/assets/buffaloghee.jpg"
+import CowDungCakes from "@/assets/cowdungcakes.jpg"
+import Junnu from "@/assets/junnu.jpg";
 
 export interface Product {
   id: string;
@@ -20,31 +20,31 @@ export interface Product {
 // Central product data - easily updatable pricing
 export const products: Product[] = [
   {
-    id: "milk",
-    name: "Fresh & Pure Milk",
+    id: "buffalomilk",
+    name: "Buffalo Milk",
     price: 100,
     unit: "per liter",
-    description: "Farm-fresh milk delivered daily, rich in nutrients and taste.",
-    image: MilkImage,
+    description: "Farm-fresh buffalo milk delivered daily, rich in nutrients and taste.",
+    image: BuffaloMilk,
     category: "dairy",
     featured: true,
   },
   {
     id: "ghee",
-    name: "Pure Desi Ghee",
+    name: "Buffalo Ghee",
     price: 1800,
     unit: "per kg",
-    description: "Traditional slow-cooked ghee made from pure butter.",
-    image: GheeImage,
+    description: "Traditional slow-cooked buffalo ghee made from pure butter.",
+    image: BuffaloGhee,
     category: "dairy",
   },
   {
-    id: "butter",
-    name: "Fresh Butter",
-    price: 60,
-    unit: "per 100g",
-    description: "Creamy homemade butter, perfect for everyday use.",
-    image: ButterImage,
+    id: "cow milk",
+    name: "Cow Milk",
+    price: 90,
+    unit: "per liter",
+    description: "Farm-fresh cow milk delivered daily, rich in nutrients and taste.",
+    image: CowMilk,
     category: "dairy",
   },
   {
@@ -52,35 +52,35 @@ export const products: Product[] = [
     name: "Soft Paneer",
     price: 450,
     unit: "per kg",
-    description: "Fresh cottage cheese, soft and perfect for cooking.",
+    description: "Fresh cottage paneer, soft and perfect for cooking.",
     image: PaneerImage,
     category: "dairy",
   },
   {
-    id: "curd",
-    name: "Fresh Curd",
-    price: 80,
+    id: "cow ghee",
+    name: "Cow Ghee",
+    price: 1500,
     unit: "per kg",
-    description: "Thick, creamy curd set in traditional clay pots.",
-    image: CurdImage,
+    description: "Traditional slow-cooked buffalo ghee made from pure butter.",
+    image: CowGhee,
     category: "dairy",
   },
   {
-    id: "buttermilk",
-    name: "Refreshing Buttermilk",
-    price: 30,
-    unit: "per glass",
-    description: "Cool and refreshing buttermilk with traditional spices.",
-    image: ButterMilkImage,
+    id: "cowdungcakes",
+    name: "Cow Dung Cakes",
+    price: 200,
+    unit: "10 per pack",
+    description: "Desi Cow Dung Cakes for Puja, Havan, and Agnihotra, 100% Sun-Dried.",
+    image: CowDungCakes,
     category: "beverages",
   },
   {
-    id: "cheese",
-    name: "Farm Cheese",
-    price: 600,
-    unit: "per kg",
+    id: "junnu",
+    name: "Junnu",
+    price: 300,
+    unit: "per liter",
     description: "Aged cheese with rich, complex flavors.",
-    image: CheeseImage,
+    image: Junnu,
     category: "dairy",
   },
 ];
