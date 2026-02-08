@@ -1,8 +1,8 @@
 import { Link, useLocation } from "react-router-dom";
 import { useState } from "react";
-import { ShoppingCart, Menu, X, Milk } from "lucide-react";
+import { ShoppingCart, Menu, X } from "lucide-react";
 import { useCart } from "@/context/CartContext";
-import { businessInfo } from "@/data/businessInfo";
+import logo from "@/assets/Logo.jpg";
 
 const navLinks = [
   { name: "Home", path: "/" },
@@ -22,20 +22,21 @@ const Navbar = () => {
     <header className="sticky top-0 z-50 bg-card/95 backdrop-blur-sm border-b border-border/50 shadow-sm">
       <nav className="container-dairy">
         <div className="flex items-center justify-between h-16 md:h-20">
-          {/* Logo */}
+          {/* Logo (Responsive / Dynamic) */}
           <Link
             to="/"
-            className="flex items-center gap-2 group"
+            className="flex items-center group min-w-0"
+            aria-label="Go to home"
           >
-            <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-              <Milk className="w-5 h-5 text-primary-foreground" />
-            </div>
-            <div className="hidden sm:block">
-              <h1 className="text-lg font-display font-semibold text-foreground leading-tight">
-                {businessInfo.name}
-              </h1>
-              <p className="text-xs text-muted-foreground -mt-0.5">Fresh from Farm</p>
-            </div>
+            <img
+              src={logo}
+              alt="Surya Dairy Products Logo"
+              className="
+              w-auto object-contain transition-transform duration-300 group-hover:scale-105
+              h-14 sm:h-16 md:h-18 lg:h-20
+              max-w-[240px] sm:max-w-[300px] md:max-w-[360px] lg:max-w-[420px]
+            "
+            />
           </Link>
 
           {/* Desktop Navigation */}
@@ -46,7 +47,7 @@ const Navbar = () => {
                 to={link.path}
                 className={`relative text-sm font-medium transition-colors duration-300 hover:text-primary
                   ${isActive(link.path) ? "text-primary" : "text-foreground/70"}
-                  after:content-[''] after:absolute after:left-0 after:bottom-[-4px] after:w-full after:h-0.5 
+                  after:content-[''] after:absolute after:left-0 after:bottom-[-4px] after:w-full after:h-0.5
                   after:bg-primary after:scale-x-0 after:origin-right after:transition-transform after:duration-300
                   hover:after:scale-x-100 hover:after:origin-left
                   ${isActive(link.path) ? "after:scale-x-100" : ""}
@@ -58,7 +59,7 @@ const Navbar = () => {
           </div>
 
           {/* Right side - Cart & Mobile Menu */}
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-2 sm:gap-4 flex-shrink-0">
             <button
               onClick={() => setIsCartOpen(true)}
               className="relative p-2 rounded-full hover:bg-accent transition-colors duration-300 group"
@@ -97,9 +98,10 @@ const Navbar = () => {
                   to={link.path}
                   onClick={() => setIsMenuOpen(false)}
                   className={`px-4 py-3 rounded-lg text-sm font-medium transition-colors duration-300
-                    ${isActive(link.path) 
-                      ? "bg-primary text-primary-foreground" 
-                      : "text-foreground hover:bg-accent"
+                    ${
+                      isActive(link.path)
+                        ? "bg-primary text-primary-foreground"
+                        : "text-foreground hover:bg-accent"
                     }
                   `}
                 >
