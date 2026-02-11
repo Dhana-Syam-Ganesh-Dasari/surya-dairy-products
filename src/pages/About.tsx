@@ -56,7 +56,7 @@ const About = () => {
               </h2>
               <div className="space-y-4 text-muted-foreground">
                 <p>
-                  Kumari Dairy Milk started as a humble family farm with just a few cows and buffalos and 
+                  Surya Dairy Products started as a humble family farm with just a few cows and buffalos and 
                   a passion for quality. Today, we're proud to serve thousands of families with 
                   the freshest dairy products.
                 </p>

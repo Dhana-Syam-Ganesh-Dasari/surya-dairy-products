@@ -11,7 +11,7 @@ export interface CartItem {
 // WhatsApp configuration - easily editable
 export const whatsappConfig = {
   phoneNumber: "+919014579846", // Replace with actual WhatsApp number (with country code, no +)
-  businessName: "Kumari Dairy Milk",
+  businessName: "Surya Dairy Products",
 };
 
 // Customizable message template

@@ -5,6 +5,7 @@ import PaneerImage from "@/assets/paneer.jpg";
 import BuffaloGhee from "@/assets/buffaloghee.jpg"
 import CowDungCakes from "@/assets/cowdungcakes.jpg"
 import Junnu from "@/assets/junnu.jpg";
+import Eggs from "@/assets/Eggs.jpg"
 
 export interface Product {
   id: string;
@@ -22,8 +23,8 @@ export const products: Product[] = [
   {
     id: "buffalomilk",
     name: "Buffalo Milk",
-    price: 100,
-    unit: "per liter",
+    price: 50,
+    unit: "per 500 ML",
     description: "Farm-fresh buffalo milk delivered daily, rich in nutrients and taste.",
     image: BuffaloMilk,
     category: "dairy",
@@ -32,8 +33,8 @@ export const products: Product[] = [
   {
     id: "ghee",
     name: "Buffalo Ghee",
-    price: 1800,
-    unit: "per kg",
+    price: 900,
+    unit: "per 500 ML",
     description: "Traditional slow-cooked buffalo ghee made from pure butter.",
     image: BuffaloGhee,
     category: "dairy",
@@ -41,8 +42,8 @@ export const products: Product[] = [
   {
     id: "cow milk",
     name: "Cow Milk",
-    price: 90,
-    unit: "per liter",
+    price: 50,
+    unit: "per 500 ML",
     description: "Farm-fresh cow milk delivered daily, rich in nutrients and taste.",
     image: CowMilk,
     category: "dairy",
@@ -50,8 +51,8 @@ export const products: Product[] = [
   {
     id: "paneer",
     name: "Soft Paneer",
-    price: 450,
-    unit: "per kg",
+    price: 200,
+    unit: "per 200 GMS",
     description: "Fresh cottage paneer, soft and perfect for cooking.",
     image: PaneerImage,
     category: "dairy",
@@ -59,8 +60,8 @@ export const products: Product[] = [
   {
     id: "cow ghee",
     name: "Cow Ghee",
-    price: 1500,
-    unit: "per kg",
+    price: 750,
+    unit: "per 500 ML",
     description: "Traditional slow-cooked buffalo ghee made from pure butter.",
     image: CowGhee,
     category: "dairy",
@@ -72,17 +73,26 @@ export const products: Product[] = [
     unit: "10 per pack",
     description: "Desi Cow Dung Cakes for Puja, Havan, and Agnihotra, 100% Sun-Dried.",
     image: CowDungCakes,
-    category: "beverages",
+    category: "dairy",
   },
   {
     id: "junnu",
     name: "Junnu",
-    price: 300,
-    unit: "per liter",
+    price: 500,
+    unit: "per 500 ML",
     description: "Aged cheese with rich, complex flavors.",
     image: Junnu,
     category: "dairy",
   },
+  {
+    id: "Eggs",
+    name: "Eggs",
+    price: 500,
+    unit: "5 per pack",
+    description: "Farm-fresh eggs with creamy, velvet textures.",
+    image: Eggs,
+    category: "dairy",
+  }
 ];
 
 export const getFeaturedProduct = () => products.find((p) => p.featured) || products[0];
