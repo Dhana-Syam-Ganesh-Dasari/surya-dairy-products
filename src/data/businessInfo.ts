@@ -63,7 +63,7 @@ export const testimonials = [
     avatar: "NS",
   },
   {
-    name: "D.Ganesh",
+    name: "D. Ganesh",
     location: "Gudivada",
     rating: 5,
     text: "Best quality ghee I've used in years. The aroma is just like my grandmother used to make.",
@@ -75,6 +75,48 @@ export const testimonials = [
     rating: 5,
     text: "Very hygienic and trustworthy dairy. Switched from packaged milk and never looked back!",
     avatar: "SR",
+  },
+  {
+    name: "Roshitha",
+    location: "Vijayawada",
+    rating: 5,
+    text: "The curd is thick, fresh, and tastes homemade. My children enjoy it every day.",
+    avatar: "RA",
+  },
+  {
+    name: "Ramesh Babu",
+    location: "Eluru",
+    rating: 5,
+    text: "Excellent service and very consistent quality. Their milk and paneer are part of our daily routine now.",
+    avatar: "RB",
+  },
+  {
+    name: "Sravani",
+    location: "Machilipatnam",
+    rating: 5,
+    text: "I really like how fresh everything feels. The delivery is prompt and the dairy products are always pure.",
+    avatar: "SV",
+  },
+  {
+    name: "Venkatesh",
+    location: "Avanigadda",
+    rating: 5,
+    text: "Surya Dairy Products reminds me of real village-style freshness. Highly reliable and worth every rupee.",
+    avatar: "VK",
+  },
+  {
+    name: "Anitha",
+    location: "Bapatla",
+    rating: 5,
+    text: "Their ghee quality is outstanding. We use it for cooking and also for special occasions at home.",
+    avatar: "AN",
+  },
+  {
+    name: "Kiran Kumar",
+    location: "Tenali",
+    rating: 5,
+    text: "Very neat packaging, authentic taste, and excellent customer support. Definitely one of the best dairies around.",
+    avatar: "KK",
   },
 ];
 

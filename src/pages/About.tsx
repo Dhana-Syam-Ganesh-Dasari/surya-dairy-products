@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import { businessInfo, whyChooseUs, farmFeatures } from "@/data/businessInfo";
 import { Award, Heart, Leaf, ShieldCheck, Sparkles, Scissors, Package, Cog, LucideIcon } from "lucide-react";
-import HeroFarmImage from "@/assets/hero-farm.jpg";
+import AboutUs from "@/assets/AboutUs.jpg";
 
 const iconMapWhy: Record<string, LucideIcon> = {
   Award,
@@ -43,7 +43,7 @@ const About = () => {
             <div className="animate-fade-in">
               <div className="relative rounded-3xl overflow-hidden shadow-xl">
                 <img
-                  src={HeroFarmImage}
+                  src={AboutUs}
                   alt="Our Farm"
                   className="w-full h-[350px] md:h-[450px] object-cover"
                 />
