@@ -1,7 +1,9 @@
+import { useState } from "react";
 import { X, Plus, Minus, ShoppingBag, MessageCircle, Trash2 } from "lucide-react";
 import { useCart } from "@/context/CartContext";
 import { formatPrice } from "@/data/products";
-import { getWhatsAppOrderUrl } from "@/data/whatsappTemplate";
+import { getWhatsAppOrderUrl, PaymentDetails } from "@/data/whatsappTemplate";
+import PaymentMethodModal from "@/components/PaymentMethodModal";
 
 const CartSlideout = () => {
   const {
@@ -16,11 +18,18 @@ const CartSlideout = () => {
     clearCart,
   } = useCart();
 
+  const [isPaymentModalOpen, setIsPaymentModalOpen] = useState(false);
+
   if (!isCartOpen) return null;
 
   const handleWhatsAppOrder = () => {
-    const url = getWhatsAppOrderUrl(items, totalPrice);
+    setIsPaymentModalOpen(true);
+  };
+
+  const handlePaymentConfirm = (payment: PaymentDetails) => {
+    const url = getWhatsAppOrderUrl(items, totalPrice, payment);
     window.open(url, "_blank");
+    setIsPaymentModalOpen(false);
   };
 
   return (
@@ -163,6 +172,13 @@ const CartSlideout = () => {
           </div>
         )}
       </div>
+
+      <PaymentMethodModal
+        isOpen={isPaymentModalOpen}
+        total={totalPrice}
+        onClose={() => setIsPaymentModalOpen(false)}
+        onConfirm={handlePaymentConfirm}
+      />
     </>
   );
 };
