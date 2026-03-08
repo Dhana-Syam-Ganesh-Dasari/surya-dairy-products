@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import { businessInfo } from "@/data/businessInfo";
 import { useCart } from "@/context/CartContext";
-import AllProductsImage from "@/assets/All Products.jpg";
+import Logo from "@/assets/Logo.jpg";
 
 const HeroSection: React.FC = () => {
   const { addToCart } = useCart(); // kept but not used (logic untouched)
@@ -170,7 +170,7 @@ const HeroSection: React.FC = () => {
 
               <div className="relative rounded-3xl shadow-xl overflow-hidden border border-border/50 group animate-bounce-subtle">
                 <img
-                  src={AllProductsImage}
+                  src={Logo}
                   alt="All Products"
                   className="w-full h-full object-cover rounded-3xl transition-transform duration-500 ease-out group-hover:scale-[1.04]"
                 />
