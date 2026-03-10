@@ -41,14 +41,15 @@ const About = () => {
         <div className="container-dairy">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="animate-fade-in">
-              <div className="relative rounded-3xl overflow-hidden shadow-xl">
+              <div className="relative w-full rounded-3xl overflow-hidden shadow-xl">
                 <img
                   src={AboutUs}
                   alt="Our Farm"
-                  className="w-full h-[350px] md:h-[450px] object-cover"
+                  className="w-full h-auto max-h-[320px] sm:max-h-[380px] md:max-h-[450px] lg:h-[450px] object-cover object-center"
                 />
               </div>
             </div>
+
             <div className="animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
               <span className="badge-leaf mb-4 inline-block">Our Journey</span>
               <h2 className="section-heading text-3xl md:text-4xl mb-6">
@@ -56,17 +57,17 @@ const About = () => {
               </h2>
               <div className="space-y-4 text-muted-foreground">
                 <p>
-                  Surya Dairy Products started as a humble family farm with just a few cows and buffalos and 
-                  a passion for quality. Today, we're proud to serve thousands of families with 
+                  Surya Dairy Products started as a humble family farm with just a few cows and buffalos and
+                  a passion for quality. Today, we're proud to serve thousands of families with
                   the freshest dairy products.
                 </p>
                 <p>
-                  Our commitment to purity and quality has never wavered. Every product that 
-                  leaves our farm is made with the same love and care that our grandparents 
+                  Our commitment to purity and quality has never wavered. Every product that
+                  leaves our farm is made with the same love and care that our grandparents
                   instilled in us decades ago.
                 </p>
                 <p>
-                  We believe in sustainable farming practices, happy animals, and bringing the 
+                  We believe in sustainable farming practices, happy animals, and bringing the
                   authentic taste of farm-fresh dairy to every home.
                 </p>
               </div>

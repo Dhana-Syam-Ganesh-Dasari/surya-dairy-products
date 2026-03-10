@@ -25,7 +25,7 @@ export const businessInfo = {
 
   social: {
     facebook: "https://facebook.com/suryadairymilk",
-    instagram: "https://instagram.com/suryadairymilk",
+    instagram: "https://instagram.com/___ganesh21___",
   },
 };
 

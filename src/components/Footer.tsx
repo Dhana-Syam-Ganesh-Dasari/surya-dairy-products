@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Phone, Mail, MapPin, Clock, MessageCircle, Milk } from "lucide-react";
+import { Phone, Mail, MapPin, Clock, MessageCircle, Milk, Instagram } from "lucide-react";
 import { businessInfo } from "@/data/businessInfo";
 import { getWhatsAppContactUrl } from "@/data/whatsappTemplate";
 
@@ -8,6 +8,7 @@ const Footer = () => {
     <footer className="bg-foreground text-background">
       <div className="container-dairy py-12 md:py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
+          
           {/* Brand */}
           <div className="lg:col-span-1">
             <Link to="/" className="flex items-center gap-2 mb-4">
@@ -48,20 +49,24 @@ const Footer = () => {
           <div>
             <h4 className="font-display font-semibold text-lg mb-4">Contact Us</h4>
             <ul className="space-y-3">
+              
               <li className="flex items-start gap-3 text-sm text-background/70">
                 <Phone className="w-4 h-4 mt-0.5 flex-shrink-0 text-primary" />
                 <span>{businessInfo.contact.phone}</span>
               </li>
+
               <li className="flex items-start gap-3 text-sm text-background/70">
                 <Mail className="w-4 h-4 mt-0.5 flex-shrink-0 text-primary" />
                 <span>{businessInfo.contact.email}</span>
               </li>
+
               <li className="flex items-start gap-3 text-sm text-background/70">
                 <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0 text-primary" />
                 <span>
                   {businessInfo.address.street}, {businessInfo.address.city}, {businessInfo.address.state}
                 </span>
               </li>
+
               <li className="flex items-start gap-3 text-sm text-background/70">
                 <Clock className="w-4 h-4 mt-0.5 flex-shrink-0 text-primary" />
                 <div>
@@ -69,6 +74,20 @@ const Footer = () => {
                   <p>Sat-Sun: {businessInfo.workingHours.weekends}</p>
                 </div>
               </li>
+
+              {/* Instagram */}
+              <li className="flex items-start gap-3 text-sm text-background/70">
+                <Instagram className="w-4 h-4 mt-0.5 flex-shrink-0 text-primary" />
+                <a
+                  href={businessInfo.social.instagram}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-primary transition-colors"
+                >
+                  Follow us on Instagram
+                </a>
+              </li>
+
             </ul>
           </div>
 
