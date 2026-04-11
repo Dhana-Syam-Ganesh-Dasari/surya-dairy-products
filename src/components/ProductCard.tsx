@@ -61,31 +61,31 @@ const ProductCard = ({ product }: ProductCardProps) => {
 
         {/* Quantity Controls / Add to Cart */}
         {quantityInCart > 0 ? (
-          <div className="flex items-center justify-between bg-accent rounded-lg p-1">
+          <div className="flex items-center justify-between bg-accent rounded-lg p-0.5 sm:p-1">
             <button
               onClick={() => decrementQuantity(product.id)}
-              className="w-10 h-10 flex items-center justify-center rounded-md bg-card hover:bg-primary hover:text-primary-foreground transition-colors duration-300"
+              className="w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center rounded-md bg-card hover:bg-primary hover:text-primary-foreground transition-colors duration-300"
               aria-label="Decrease quantity"
             >
-              <Minus className="w-4 h-4" />
+              <Minus className="w-3 h-3 sm:w-4 sm:h-4" />
             </button>
-            <span className="font-semibold text-lg text-foreground min-w-[40px] text-center">
+            <span className="font-semibold text-sm sm:text-lg text-foreground min-w-[30px] sm:min-w-[40px] text-center">
               {quantityInCart}
             </span>
             <button
               onClick={() => incrementQuantity(product.id)}
-              className="w-10 h-10 flex items-center justify-center rounded-md bg-card hover:bg-primary hover:text-primary-foreground transition-colors duration-300"
+              className="w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center rounded-md bg-card hover:bg-primary hover:text-primary-foreground transition-colors duration-300"
               aria-label="Increase quantity"
             >
-              <Plus className="w-4 h-4" />
+              <Plus className="w-3 h-3 sm:w-4 sm:h-4" />
             </button>
           </div>
         ) : (
           <button
             onClick={handleAddToCart}
-            className="btn-primary w-full flex items-center justify-center gap-2"
+            className="btn-primary w-full flex items-center justify-center gap-1 sm:gap-2 text-xs sm:text-sm py-2 sm:py-3"
           >
-            <ShoppingCart className="w-4 h-4" />
+            <ShoppingCart className="w-3 h-3 sm:w-4 sm:h-4" />
             Add to Cart
           </button>
         )}
