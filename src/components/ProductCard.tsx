@@ -41,20 +41,20 @@ const ProductCard = ({ product }: ProductCardProps) => {
       </div>
 
       {/* Content */}
-      <div className="flex flex-col flex-1 p-4 md:p-5">
-        <h3 className="font-display font-semibold text-lg text-foreground mb-1">
+      <div className="flex flex-col flex-1 p-3 sm:p-4 md:p-5">
+        <h3 className="font-display font-semibold text-sm sm:text-lg text-foreground mb-0.5 sm:mb-1 line-clamp-1">
           {product.name}
         </h3>
-        <p className="text-sm text-muted-foreground mb-3 line-clamp-2 flex-1">
+        <p className="text-xs sm:text-sm text-muted-foreground mb-2 sm:mb-3 line-clamp-2 flex-1 hidden sm:block">
           {product.description}
         </p>
         
         {/* Price */}
-        <div className="mb-4">
-          <span className="text-xl font-semibold text-primary">
+        <div className="mb-2 sm:mb-4">
+          <span className="text-base sm:text-xl font-semibold text-primary">
             {formatPrice(product.price)}
           </span>
-          <span className="text-sm text-muted-foreground ml-2">
+          <span className="text-xs sm:text-sm text-muted-foreground ml-1 sm:ml-2">
             {product.unit}
           </span>
         </div>
